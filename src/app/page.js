@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -46,6 +47,40 @@ export default function Home() {
             <button>
               <a href="#contact">Get In Touch</a>
             </button>
+          </div>
+        </div>
+      </section>
+
+ {/* Projects Section */}
+      <section id="projects" className="container py-24 bg-muted/50">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">Featured Projects</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div>
+                <h3 className="mb-2">Weather Dashboard</h3>
+                <p className="mb-4">
+                  A responsive weather dashboard that displays current weather conditions and forecasts for multiple
+                  cities with beautiful data visualizations.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <p variant="secondary">Vue.js</p>
+                  <p variant="secondary">Chart.js</p>
+                  <p variant="secondary">OpenWeather API</p>
+                  <p variant="secondary">Tailwind CSS</p>
+                </div>
+                <div className="flex space-x-2">
+                  <button size="sm">
+                    <a href="https://example.com" target="_blank">
+                      Live Demo
+                    </a>
+                  </button>
+                  <button size="sm" variant="outline">
+                    <a href="https://github.com" target="_blank">
+                      Code
+                    </a>
+                  </button>
+                </div>
+            </div>
           </div>
         </div>
       </section>
